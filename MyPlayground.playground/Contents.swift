@@ -56,6 +56,20 @@ let stores = (1...50).map { _ in
 
 let myLocation = Location(lat: 47.67, lon: -122.195)
 
-// Find three covfefe stores closest to myLocation
+// Find three coffee shops closest to myLocation
 // and print store name and distance for each
+
+func nearToFar(first: Store, second: Store) -> Bool {
+    return first.location.distance(to: myLocation) < second.location.distance(to: myLocation)
+}
+
+let coffeeShops = stores
+    .filter { store in store.category == .covfefe }
+    .map { (name: $0.name, distance: $0.location.distance(to: myLocation)) }
+    .sorted { $0.distance < $1.distance }
+    .prefix(3)
+
+for store in coffeeShops {
+    print (store.name, store.distance.rounded())
+}
 
