@@ -90,6 +90,13 @@ struct HeroView: View {
                 aimsImage(url: video.tease)
                     .frame(minWidth: 100, maxWidth: .infinity)
 
+                Optional(video.preview) { preview in
+                    if self.focused {
+                        AVPlayerView(url: preview)
+                            .frame(maxWidth: .infinity)
+                    }
+                }
+
                 VStack(alignment: .leading, spacing: 0) {
                     HStack(spacing: 16) {
                         if video.label != nil {
