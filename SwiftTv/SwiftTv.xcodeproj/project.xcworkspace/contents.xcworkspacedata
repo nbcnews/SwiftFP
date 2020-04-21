@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:sclView.swift">
+   </FileRef>
+   <FileRef
+      location = "self:SwiftTv.xcodeproj">
+   </FileRef>
+</Workspace>

@@ -13,6 +13,7 @@ struct HeroView: View {
     }
 
     @State var focused = false
+    @State var detail = false
 
     var body: AnyView {
         switch model {
@@ -94,8 +95,9 @@ struct HeroView: View {
                     if self.focused {
                         AVPlayerView(url: preview)
                             .frame(maxWidth: .infinity)
+                            .transition(AnyTransition.opacity.animation(.easeInOut(duration: 0.3)))
                     }
-                }
+                }.transition(.slide)
 
                 VStack(alignment: .leading, spacing: 0) {
                     HStack(spacing: 16) {
@@ -112,7 +114,6 @@ struct HeroView: View {
                         .background(GeometryReader { proxy in
                             Color.clear.exe {
                                 let frame = proxy.frame(in: .global)
-                                //print ("set focused to", frame.midY > 200 && frame.midY < 600)
                                 DispatchQueue.main.async {
                                     self.focused = frame.midY > 200 && frame.midY < 600
                                 }
