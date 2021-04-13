@@ -1,0 +1,6 @@
+{
+  "name": "NBC News X1",
+  "identifier": "com.nbcnews.tvx",
+  "version": "1.0.0",
+  "icon": "./static/icon.png"
+}

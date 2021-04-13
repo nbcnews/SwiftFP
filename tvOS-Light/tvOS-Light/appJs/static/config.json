@@ -1,0 +1,37 @@
+{
+    "videoad":
+    {
+      "secondsbetweenads": 180,
+      "secondstofirstad": 5
+    },
+    "playmakeradsconfig":
+    {
+      "baseURL": "http://manifest.auditude.com/auditude/variant/",
+      "z": "270096",
+      "g": "1000010",
+      "u": "b6988767c97155f8611ef6d61f70547f",
+      "ptcueformat": "nbcscte35",
+      "pttoken": "akamai",
+      "caid": "newsnow_linear_asset"
+    },
+    "freewheel":
+    {
+      "adTag": "roku_nbcnews_us_news"
+    },
+    "urls":
+    {
+      "apiBase": "https://ottapi.nbcnews.com/",
+      "freewheel": "http://29773.s.fwmrm.net/ad/g/1?nw=169843&crtp=vast2s&resp=vast2&prof=169843:nbcu_roku_live&csid=[csid]&caid=[caid]&vdur=[vdur]&pvrn=[pvrn]&vprn=[vprn]&ssnw=169843&asnw=169843&flag=+dtrd+exvt+amcb+emcr+sltp+slcb+qtcb-fbad&metr=1023&afid=137704898&sfid=6979927;_fw_vcid2=169843:[vcid2]&_fw_did=[fwdid]&_fw_is_lat=[fwislat]&_fw_h_user_agent=[useragent]&rdid=[rdid]&uoo=[uoo];slid=pre&ptgt=a&tpcl=PREROLL&tpos=0&maxa=1;",
+      "playmakergetbypid": "https://api.leap.nbcsports.com/pid/NBCNews/{PID}/v4/roku",
+      "playmakernotifications": "http://stream.nbcsports.com/data/lowttl/notifications_{PID}.json",
+      "playmakerstatus": "http://stream.nbcsports.com/data/event_status_{PID}.json",
+      "newsnowstatus": "https://playmakergo.s3.amazonaws.com/current",
+      "defaultlivebg": "https://media2.s-nbcnews.com/i/newscms/2020_19/3341161/live-full-screen_c532e255146e9c756eb256bdb2080ae7.jpg"
+    },
+    "brands":
+    {
+      "nbcnews": "ott/news/cover",
+      "today": "ott/today/cover",
+      "msnbc": "ott/msnbc/cover"
+    }
+}
